@@ -23,6 +23,6 @@ A simple Laravel + Vue.js application for creating and searching transport units
 
 ## Seeding (optional)
 
-To seed 100,000 transport units:
+To seed 100,000 transport units (Takes a couple minutes):
 ```bash
 php artisan db:seed --class=TransportUnitSeeder

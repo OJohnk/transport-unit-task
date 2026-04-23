@@ -27,7 +27,6 @@ async function fetchUnits() {
 
 let searchTimeout: ReturnType<typeof setTimeout>;
 
-
 onMounted(fetchUnits);
 // Avoids firing a request on every key press.
 watch(searchTerm, () => {
