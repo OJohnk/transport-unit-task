@@ -4,7 +4,7 @@ A simple Laravel + Vue.js application for creating and searching transport units
 
 ## Requirements
 
-- PHP 8.x
+- PHP 8.4+
 - Composer
 - Node.js
 - MySQL
