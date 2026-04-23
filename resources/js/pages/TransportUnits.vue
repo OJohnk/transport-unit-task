@@ -5,7 +5,6 @@ import TransportUnitList from '../components/transport/TransportUnitList.vue';
 
 const activeTab = ref<Type>(Type.Truck);
 
-
 </script>
 
 <template>
@@ -31,19 +30,30 @@ const activeTab = ref<Type>(Type.Truck);
 
 .tabs {
     display: flex;
-	justify-content: center;
-    gap: 8px;
-    margin-bottom: 16px;
+    justify-content: center;
+    margin-bottom: 24px;
 }
 
 .tabs button {
-    padding: 8px 16px;
+    padding: 12px 24px;
+    border: none;
+    background: none;
     cursor: pointer;
+    font-size: 15px;
+    color: #888;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tabs button:hover {
+    color: #333;
 }
 
 .tabs button.active {
-    font-weight: bold;
-    border-bottom: 2px solid black;
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+    font-weight: 600;
 }
 
 </style>
